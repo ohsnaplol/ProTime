@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "ProTime",
+  "description": "Analyzes and gamifies your level of productivity",
+  "version": "1.0",
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html"
+  },
+  "permissions": [
+   "activeTab"
+ ],
+
+   "content_scripts": [ {
+    "js": [ "jquery-3.3.1.min.js", "popup.js" ],
+    "matches": [ "http://*/*", "https://*/*"]
+  }],
+}
